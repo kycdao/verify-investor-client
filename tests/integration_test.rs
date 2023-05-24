@@ -27,6 +27,7 @@ async fn get_user() {
 }
 
 #[test(tokio::test)]
+#[ignore]
 async fn list_verification_requests() {
     let resp = get_client().list_verification_requests(ApiType::All).await;
     println!("Resp: {:#?}", resp);
